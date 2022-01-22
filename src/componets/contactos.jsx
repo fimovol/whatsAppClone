@@ -5,31 +5,31 @@ const datos =[
   {
     imagen :'imagen',
     nombre :'asldjkasldkñj',
-    mensaje :'asfgsdgdfg',
+    mensaje :'ernesto de la cruz',
     hora :'xcvbxcb',
   },
   {
     imagen :'imagen',
     nombre :'a',
-    mensaje :'asfgsdgdfg',
+    mensaje :'dofia melgara',
     hora :'xcvbxcb',
   },
   {
     imagen :'imagen',
     nombre :'asldjkasldkñj',
-    mensaje :'s',
+    mensaje :'cristofer el rayas',
     hora :'xcvbxcb',
   },
   {
     imagen :'imagen',
     nombre :'asldjkasldkñj',
-    mensaje :'asfgsdgdfg',
+    mensaje :'juan el pendejo qeu sube contenido a internet de mala calidad',
     hora :'xcvbxcb',
   },
   {
     imagen :'imagen',
     nombre :'asldjkasldkñj',
-    mensaje :'asd',
+    mensaje :'yo con mis ganas de superacion',
     hora :'23:00',
   },
 ]
@@ -44,7 +44,17 @@ export default function _(){
           nombre={nombre} 
           mensaje={mensaje}
           hora={hora} 
-          onAparece={() => store.dispatch({ type: 'APARECE' })}/>
+          onAparece={() => store.dispatch({ type: 'APARECE' })}
+          crearNota={() => store.dispatch({
+            type: 'CREARNOTA',
+            payload: {
+              iterador: iterador,
+              imagen:imagen,
+              nombre:nombre,
+              mensaje:mensaje,
+              hora:hora
+            }
+          })}/>
       })
     }
   </div>

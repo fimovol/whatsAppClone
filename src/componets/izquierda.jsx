@@ -4,9 +4,14 @@ export default function _(){
     <Nashe/>
   </div>  
 }
+
 function Nashe(){
-  if(store.getState()){
-    return <h1 className="text-cyan-200">mostrando la nueva ventana</h1>
+  console.log(store.getState())
+  if(store.getState()[0].numero){
+    return store.getState().map( ({mensaje},iterador) => {
+      return <h1 key={iterador} className="text-cyan-200">mostrando la nueva ventana {mensaje}</h1>
+    })
+    
   }
   return <h1 className="text-cyan-200">manten tu telefono conectado</h1>
 }
