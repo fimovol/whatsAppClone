@@ -3,33 +3,33 @@ import { createStore } from 'redux'
 import counter from '../reducer'
 const datos =[
   {
-    imagen :'imagen',
-    nombre :'asldjkasldkñj',
+    imagen :'https://cranky-tereshkova-b7162f.netlify.app/assets/gql.3a0bd593.jpg',
+    nombre :'mario bros',
     mensaje :'ernesto de la cruz',
-    hora :'xcvbxcb',
+    hora :'19:00',
   },
   {
-    imagen :'imagen',
-    nombre :'a',
+    imagen :'https://cranky-tereshkova-b7162f.netlify.app/assets/movil.78776bc7.jpg',
+    nombre :'carlos',
     mensaje :'dofia melgara',
-    hora :'xcvbxcb',
+    hora :'20:00',
   },
   {
-    imagen :'imagen',
-    nombre :'asldjkasldkñj',
+    imagen :'https://raw.githubusercontent.com/fimovol/portafolioj/master/src/fotos/scraping.jpg',
+    nombre :'referido',
     mensaje :'cristofer el rayas',
-    hora :'xcvbxcb',
+    hora :'21:00',
   },
   {
-    imagen :'imagen',
-    nombre :'asldjkasldkñj',
-    mensaje :'juan el pendejo qeu sube contenido a internet de mala calidad',
-    hora :'xcvbxcb',
+    imagen :'https://raw.githubusercontent.com/fimovol/portafolioj/master/src/fotos/luces.jpg',
+    nombre :'el mensajes',
+    mensaje :'juan el pendejo ',
+    hora :'22:00',
   },
   {
-    imagen :'imagen',
-    nombre :'asldjkasldkñj',
-    mensaje :'yo con mis ganas de superacion',
+    imagen :'https://raw.githubusercontent.com/fimovol/portafolioj/master/src/fotos/calculadora.jpg',
+    nombre :'funado',
+    mensaje :'yo con mis ganas ',
     hora :'23:00',
   },
 ]
@@ -44,7 +44,6 @@ export default function _(){
           nombre={nombre} 
           mensaje={mensaje}
           hora={hora} 
-          onAparece={() => store.dispatch({ type: 'APARECE' })}
           crearNota={() => store.dispatch({
             type: 'CREARNOTA',
             payload: {
