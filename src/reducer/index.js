@@ -1,9 +1,5 @@
-export default (state = [{numero:0}], action) => {
+export default (state = [], action) => {
   switch (action.type) {
-  case 'APARECE':
-    return [{numero:1}]
-  case 'DESAPARECE':
-    return [{numero:0}]
   case 'CREARNOTA':
     return state.concat(action.payload)
   default:
