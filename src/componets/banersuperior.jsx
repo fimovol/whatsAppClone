@@ -1,6 +1,6 @@
 import Fotodeperfil from './fotoperfil'
 export default function _({imagen,nombre}){
-  return <div className='h-20 flex bg-slate-600 space-x-4 items-center relative'>
+  return <div className='h-20 flex bg-slate-600 space-x-4 items-center relative z-10'>
     <div className='ml-4'>
       <Fotodeperfil imagen={imagen}/>
     </div>

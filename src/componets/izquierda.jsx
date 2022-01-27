@@ -14,10 +14,18 @@ function Nashe(){
   let ultimovalor = estado.length
 
   if(ultimovalor){
-    const {imagen,nombre} = estado[ultimovalor -1] 
+    const {imagen,nombre,mensajes} = estado[ultimovalor -1] 
+    const {mensaje,hora} =mensajes[1]
     return <>
       <Banersuperior imagen={imagen} nombre={nombre}/>
-      <Mensajes/>
+      <div className=' bg-pink-900 h-full w-full '>
+        <div className='relative w-full h-full'>
+          <div className='absolute w-full overflow-auto h-auto flex flex-col items-center justify-end bottom-0'>
+            <Mensajes mensaje={mensaje} hora={hora}/> 
+          </div>
+        </div>
+        
+      </div>
       <Tipearmensaje/>
     </>
   }

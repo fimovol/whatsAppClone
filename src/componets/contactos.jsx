@@ -51,7 +51,17 @@ export default function _(){
               imagen:imagen,
               nombre:nombre,
               mensaje:mensaje,
-              hora:hora
+              hora:hora,
+              mensajes:[
+                {
+                  mensaje:'ahah',
+                  hora:'12',
+                },
+                {
+                  mensaje:'mensaje',
+                  hora:'hora',
+                },
+              ]
             }
           })}/>
       })
