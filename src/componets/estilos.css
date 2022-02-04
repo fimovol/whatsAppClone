@@ -1,0 +1,13 @@
+.jeje{
+    background:green;
+    width:100vw;
+    height:100vh;
+    display:grid;
+    grid-template-rows: 1fr 9fr 1fr;
+}
+
+.nombreunico{
+    display: grid;
+    background-color: gray;
+    grid-template-columns: auto 14fr 2fr;
+}

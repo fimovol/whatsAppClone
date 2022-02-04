@@ -2,9 +2,10 @@ import {store} from './contactos'
 import Tipearmensaje from './tipearmensaje'
 import Banersuperior from './banersuperior'
 import Mensajes from './mensajes'
+import './estilos.css'
 
 export default function _(){
-  return <div className='bg-green-600 w-screen h-screen relative'>
+  return <div className='jeje'>
     <Nashe/>
   </div>  
 }
@@ -18,13 +19,8 @@ function Nashe(){
     const {mensaje,hora} =mensajes[1]
     return <>
       <Banersuperior imagen={imagen} nombre={nombre}/>
-      <div className=' bg-pink-900 h-full w-full '>
-        <div className='relative w-full h-full'>
-          <div className='absolute w-full overflow-auto h-auto flex flex-col items-center justify-end bottom-0'>
-            <Mensajes mensaje={mensaje} hora={hora}/> 
-          </div>
-        </div>
-        
+      <div className=' bg-pink-900 w-full h-full overflow-auto'> 
+        <Mensajes mensaje={mensaje} hora={hora}/> 
       </div>
       <Tipearmensaje/>
     </>
