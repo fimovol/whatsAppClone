@@ -1,6 +1,5 @@
 
-export default function _({mensaje,hora}){
-  console.log(mensaje,hora)
+export default function _(){
   const mensajeenviar = [
     {
       elemento:'mensaje de el de arriba',
@@ -72,14 +71,8 @@ export default function _({mensaje,hora}){
     }
     <div className=" my-3 mx-5">
       <div className=" bg-slate-100 rounded flex items-center justify-center w-max px-3 py-2">
-      holaasd asd asdas d asdasd sfsf
+        holaasd asd asdas d asdasd sfsf
       </div> 
     </div>
-    
-
-
-
   </>
-  
-
 }

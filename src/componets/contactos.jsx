@@ -50,18 +50,7 @@ export default function _(){
               iterador: iterador,
               imagen:imagen,
               nombre:nombre,
-              mensaje:mensaje,
               hora:hora,
-              mensajes:[
-                {
-                  mensaje:'ahah',
-                  hora:'12',
-                },
-                {
-                  mensaje:'mensaje',
-                  hora:'hora',
-                },
-              ]
             }
           })}/>
       })
